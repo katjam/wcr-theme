@@ -102,7 +102,7 @@ else {
 }
 ?>
                         </nav>
-                    <div><!-- #site-navigation -->
+                    </div><!-- #site-navigation -->
 
                </div><!-- #header-text-nav-wrap -->
 
