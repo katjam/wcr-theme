@@ -2,3 +2,43 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/*--------------
+ MIXINS
+ ---------------*/
+/*--------------
+ MAIN NAVIGATION
+ ---------------*/
+/* line 22, ../sass/screen.scss */
+#site-navigation {
+  clear: both;
+  float: none;
+}
+
+/*--------------
+ IMAGES
+---------------*/
+/* line 31, ../sass/screen.scss */
+img.round {
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  border-radius: 100%;
+}
+/* line 34, ../sass/screen.scss */
+img.right {
+  float: right;
+  padding-left: 12px;
+}
+/* line 38, ../sass/screen.scss */
+img.left {
+  float: left;
+  padding-right: 12px;
+}
+
+/*--------------
+ PARAGRAPHS
+ -------------*/
+/* line 47, ../sass/screen.scss */
+p {
+  text-align: justify;
+}

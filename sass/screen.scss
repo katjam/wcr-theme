@@ -6,3 +6,44 @@
 // This was a bit too heavy handed but might come in useful
 // @import "compass/reset";
 
+/*--------------
+ MIXINS
+ ---------------*/
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+/*--------------
+ MAIN NAVIGATION
+ ---------------*/
+#site-navigation {
+    clear: both;
+    float: none;
+}
+
+/*--------------
+ IMAGES
+---------------*/
+img {
+  &.round {
+    @include border-radius(100%);
+  }
+  &.right {
+    float: right;
+    padding-left: 12px;
+  }
+  &.left {
+    float: left;
+    padding-right: 12px;
+  }
+}
+
+/*--------------
+ PARAGRAPHS
+ -------------*/
+p {
+  text-align: justify;
+}
