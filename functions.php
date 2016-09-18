@@ -20,6 +20,10 @@ function enqueue_compiled_styles() {
   );
   // Could also use conditional 'lt IE 9' or 'IE 7' etc.
   wp_style_add_data( 'wcr-sass-ie', 'conditional', 'IE');
+  wp_enqueue_style( 'font-awesome',
+      get_stylesheet_directory_uri().'/font-awesome.min.css'
+  );
+
 }
 
 function wcr_footer_copyright() {
