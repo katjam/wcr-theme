@@ -15,21 +15,34 @@
 }
 
 /*--------------
+ ICONS
+ --------------*/
+/* line 30, ../sass/screen.scss */
+.fa-twitter-square {
+  color: #55acee;
+}
+
+/* line 33, ../sass/screen.scss */
+.fa-linkedin-square {
+  color: #0077b5;
+}
+
+/*--------------
  IMAGES
 ---------------*/
-/* line 31, ../sass/screen.scss */
+/* line 41, ../sass/screen.scss */
 img.round {
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   -ms-border-radius: 100%;
   border-radius: 100%;
 }
-/* line 34, ../sass/screen.scss */
+/* line 44, ../sass/screen.scss */
 img.right {
   float: right;
   padding-left: 12px;
 }
-/* line 38, ../sass/screen.scss */
+/* line 48, ../sass/screen.scss */
 img.left {
   float: left;
   padding-right: 12px;
@@ -38,7 +51,7 @@ img.left {
 /*--------------
  PARAGRAPHS
  -------------*/
-/* line 47, ../sass/screen.scss */
+/* line 57, ../sass/screen.scss */
 p {
   text-align: justify;
 }
