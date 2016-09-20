@@ -25,6 +25,22 @@
 }
 
 /*--------------
+ CONTACT
+---------------*/
+#header-right-sidebar {
+  line-height: 1.4;
+}
+.numbers {
+  font-size: 1.1em;
+  span {
+    display: block;
+  }
+  i {
+    width: 20px;
+  }
+}
+
+/*--------------
  ICONS
  --------------*/
 .fa-twitter-square {
@@ -32,6 +48,9 @@
 }
 .fa-linkedin-square {
   color: #0077b5;
+}
+.fa-facebook-square{
+  color: #3b5998;
 }
 
 /*--------------
