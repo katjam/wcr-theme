@@ -26,6 +26,13 @@ function enqueue_compiled_styles() {
 
 }
 
+// Allow svg upload for logo
+function cc_mime_types($mimes) {
+  $mimes['svg'] = 'image/svg+xml';
+  return $mimes;
+}
+add_filter('upload_mimes', 'cc_mime_types');
+
 function wcr_footer_copyright() {
   $copyright_txt = 'Copyright &copy; '.date('Y').' West Country Rural Ltd.';
   $theme_info = ' Powered by Wordpress. Theme based on Spacious by ThemeGrill.';

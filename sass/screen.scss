@@ -25,6 +25,25 @@
 }
 
 /*--------------
+ HEADER
+---------------*/
+#header-text-nav-container {
+
+  #site-title a {
+    font-size: 52px;
+  }
+  #site-description {
+    font-size: 28px;
+  }
+  #header-logo-image {
+    img {
+      height: 170px;
+    }
+  }
+}
+
+
+/*--------------
  CONTACT
 ---------------*/
 #header-right-sidebar {
@@ -75,4 +94,16 @@ img {
  -------------*/
 p {
   text-align: justify;
+}
+
+/*--------------
+ MEDIA QUERIES
+---------------*/
+@media screen and (max-width: 768px) {
+  #header-text-nav-container {
+    #site-description {
+      font-size: 22px;
+      text-align: center;
+    }
+  }
 }
