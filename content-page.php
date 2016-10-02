@@ -12,16 +12,10 @@
     <?php do_action( 'spacious_before_post_content' ); ?>
 <?php
 if( has_post_thumbnail() ) {
-    if( spacious_options( 'spacious_site_layout', 'box_1218px' ) == 'box_1218px' || spacious_options( 'spacious_site_layout', 'box_1218px' ) == 'wide_1218px' ) {
-        $featured = 'featured-blog-large';
-    }
-    elseif( spacious_options( 'spacious_site_layout', 'box_1218px' ) == 'box_978px' || spacious_options( 'spacious_site_layout', 'box_1218px' ) == 'wide_978px' ) {
-        $featured = 'featured';
-    }
     $image = '';
     $title_attribute = get_the_title( $post->ID );
     $image .= '<figure class="post-featured-image">';
-    $image .= get_the_post_thumbnail( $post->ID, $featured, array( 'title' => esc_attr( $title_attribute ), 'alt' => esc_attr( $title_attribute ) ) );
+    $image .= get_the_post_thumbnail( $post->ID, 'wcr_banner', array( 'title' => esc_attr( $title_attribute ), 'alt' => esc_attr( $title_attribute ) ) );
     $image .= '</figure>';
 
     echo $image;
