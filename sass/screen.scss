@@ -42,6 +42,19 @@
   }
 }
 
+/*--------------
+ FOOTER
+---------------*/
+.footer-widgets-wrapper #text-6.widget_text {
+  background-color: #767676;
+  padding: 10px;
+  @include border-radius(10px);
+}
+.footer-socket-wrapper {
+  .copyright {
+    max-width: 95%;
+  }
+}
 
 /*--------------
  CONTACT
