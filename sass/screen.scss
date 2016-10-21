@@ -7,6 +7,12 @@
 // @import "compass/reset";
 
 /*--------------
+ COLOURS
+ --------------*/
+$wcr-navy: #282f6b;
+$wcr-lime: #75b72a;
+
+/*--------------
  MIXINS
  ---------------*/
 @mixin border-radius($radius) {
@@ -30,6 +36,14 @@ body {
 #site-navigation {
     clear: both;
     float: none;
+    .menu-toggle,
+    &.main-small-navigation li {
+      background: $wcr-navy;
+    }
+    .menu-toggle:hover,
+    &.main-small-navigation li:hover {
+      background: $wcr-lime;
+    }
 }
 
 /*--------------
@@ -54,10 +68,10 @@ body {
  FOOTER
 ---------------*/
 .footer-widgets-wrapper {
-  background-color: #282f6b;
+  background-color: $wcr-navy;
 
   .footer-widgets-area a {
-    color: #75b72a !important;
+    color: $wcr-lime !important;
   }
   .tg-one-fourth {
     margin: 0 0.5em;
