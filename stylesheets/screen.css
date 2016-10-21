@@ -5,10 +5,63 @@
 /*--------------
  MIXINS
  ---------------*/
+/*---------------
+ LAYOUT
+ ---------------*/
+/* line 22, ../sass/screen.scss */
+body {
+  /* background: linear-gradient(#75b72a, darkblue); */
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* Footer styles. */
+/* line 29, ../sass/screen.scss */
+.tg-one-fourth {
+  margin: 0 3rem;
+  padding-bottom: 0;
+  width: 33%;
+}
+
+/* line 35, ../sass/screen.scss */
+.tg-one-fourth.tg-after-two-blocks-clearfix.tg-column-3 {
+  display: none;
+}
+
+/* line 39, ../sass/screen.scss */
+.footer-widgets-area.clearfix {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 44, ../sass/screen.scss */
+.textwidget {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+}
+
+/* line 50, ../sass/screen.scss */
+.footer-widgets-wrapper {
+  background-color: gainsboro;
+}
+
+/* line 54, ../sass/screen.scss */
+.footer-widgets-area a {
+  color: #75b72a !important;
+}
+
+/* line 58, ../sass/screen.scss */
+.tg-one-fourth.tg-one-fourth-last.tg-column-4 {
+  text-align: right;
+  font-size: 18px;
+  line-height: 1.5rem;
+}
+
 /*--------------
  MAIN NAVIGATION
  ---------------*/
-/* line 22, ../sass/screen.scss */
+/* line 68, ../sass/screen.scss */
 #site-navigation {
   clear: both;
   float: none;
@@ -17,15 +70,15 @@
 /*--------------
  HEADER
 ---------------*/
-/* line 32, ../sass/screen.scss */
+/* line 78, ../sass/screen.scss */
 #header-text-nav-container #site-title a {
   font-size: 52px;
 }
-/* line 35, ../sass/screen.scss */
+/* line 81, ../sass/screen.scss */
 #header-text-nav-container #site-description {
   font-size: 28px;
 }
-/* line 39, ../sass/screen.scss */
+/* line 85, ../sass/screen.scss */
 #header-text-nav-container #header-logo-image img {
   height: 170px;
 }
@@ -33,7 +86,7 @@
 /*--------------
  FOOTER
 ---------------*/
-/* line 48, ../sass/screen.scss */
+/* line 94, ../sass/screen.scss */
 .footer-widgets-wrapper #text-6.widget_text {
   background-color: #767676;
   padding: 10px;
@@ -43,7 +96,7 @@
   border-radius: 10px;
 }
 
-/* line 54, ../sass/screen.scss */
+/* line 100, ../sass/screen.scss */
 .footer-socket-wrapper .copyright {
   max-width: 95%;
 }
@@ -51,20 +104,20 @@
 /*--------------
  CONTACT
 ---------------*/
-/* line 62, ../sass/screen.scss */
+/* line 108, ../sass/screen.scss */
 #header-right-sidebar {
   line-height: 1.4;
 }
 
-/* line 65, ../sass/screen.scss */
+/* line 111, ../sass/screen.scss */
 .numbers {
   font-size: 1.1em;
 }
-/* line 67, ../sass/screen.scss */
+/* line 113, ../sass/screen.scss */
 .numbers span {
   display: block;
 }
-/* line 70, ../sass/screen.scss */
+/* line 116, ../sass/screen.scss */
 .numbers i {
   width: 20px;
 }
@@ -72,17 +125,17 @@
 /*--------------
  ICONS
  --------------*/
-/* line 78, ../sass/screen.scss */
+/* line 124, ../sass/screen.scss */
 .fa-twitter-square {
   color: #55acee;
 }
 
-/* line 81, ../sass/screen.scss */
+/* line 127, ../sass/screen.scss */
 .fa-linkedin-square {
   color: #0077b5;
 }
 
-/* line 84, ../sass/screen.scss */
+/* line 130, ../sass/screen.scss */
 .fa-facebook-square {
   color: #3b5998;
 }
@@ -90,19 +143,19 @@
 /*--------------
  IMAGES
 ---------------*/
-/* line 92, ../sass/screen.scss */
+/* line 138, ../sass/screen.scss */
 img.round {
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   -ms-border-radius: 100%;
   border-radius: 100%;
 }
-/* line 95, ../sass/screen.scss */
+/* line 141, ../sass/screen.scss */
 img.right {
   float: right;
   padding-left: 12px;
 }
-/* line 99, ../sass/screen.scss */
+/* line 145, ../sass/screen.scss */
 img.left {
   float: left;
   padding-right: 12px;
@@ -111,7 +164,7 @@ img.left {
 /*--------------
  PARAGRAPHS
  -------------*/
-/* line 108, ../sass/screen.scss */
+/* line 154, ../sass/screen.scss */
 p {
   text-align: justify;
 }
@@ -120,7 +173,7 @@ p {
  MEDIA QUERIES
 ---------------*/
 @media screen and (max-width: 768px) {
-  /* line 117, ../sass/screen.scss */
+  /* line 163, ../sass/screen.scss */
   #header-text-nav-container #site-description {
     font-size: 22px;
     text-align: center;

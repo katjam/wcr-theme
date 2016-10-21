@@ -7,47 +7,4 @@ Version: 0.0.0
 Text Domain: wcr-theme
 */
 
-body {
-    /* background: linear-gradient(#75b72a, darkblue); */
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
-}
-
-/* Footer styles. */
-
-.tg-one-fourth {
-    margin: 0 3rem;
-    padding-bottom: 0;
-    width: 33%;    
-}
-
-.tg-one-fourth.tg-after-two-blocks-clearfix.tg-column-3 {
-    display: none;
-}
-
-.footer-widgets-area.clearfix {
-    display: flex;
-    justify-content: space-between;
-}
-
-.textwidget {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: flex-start;
-}
-
-.footer-widgets-wrapper {
-    background-color: gainsboro;
-}
-
-.footer-widgets-area a {
-    color: #75b72a !important;
-}
-
-.tg-one-fourth.tg-one-fourth-last.tg-column-4 {
-    text-align: right;
-    font-size: 18px;
-    line-height: 1.5rem;
-
-}
 
