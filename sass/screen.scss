@@ -47,14 +47,6 @@ body {
     align-items: flex-start;
 }
 
-.footer-widgets-wrapper {
-    background-color: gainsboro;
-}
-
-.footer-widgets-area a {
-    color: #75b72a !important;
-}
-
 .tg-one-fourth.tg-one-fourth-last.tg-column-4 {
     text-align: right;
     font-size: 18px;
@@ -91,11 +83,14 @@ body {
 /*--------------
  FOOTER
 ---------------*/
-.footer-widgets-wrapper #text-6.widget_text {
-  background-color: #767676;
-  padding: 10px;
-  @include border-radius(10px);
+.footer-widgets-wrapper {
+  background-color: #282f6b;
+
+  .footer-widgets-area a {
+    color: #75b72a !important;
+  }
 }
+
 .footer-socket-wrapper {
   .copyright {
     max-width: 95%;
