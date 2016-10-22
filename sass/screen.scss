@@ -50,7 +50,9 @@ body {
  HEADER
 ---------------*/
 #header-text-nav-container {
-
+  #header-left-section {
+    margin-right: 10px;
+  }
   #site-title a {
     font-size: 52px;
   }
