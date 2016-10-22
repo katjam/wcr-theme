@@ -73,29 +73,11 @@ body {
   .footer-widgets-area a {
     color: $wcr-lime !important;
   }
+
   .tg-one-fourth {
-    margin: 0 0.5em;
-    padding-bottom: 0;
-    width: 50%;
-    &.tg-column-2,
-    &.tg-after-two-blocks-clearfix.tg-column-3 {
-      display: none;
-    }
-    &.tg-one-fourth-last.tg-column-4 {
-      text-align: right;
+      font-size: 1.2em;
       line-height: 1.5em;
-    }
-  }
-
-  .footer-widgets-area.clearfix {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .textwidget {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: flex-start;
+      padding: 0;
   }
 }
 
@@ -109,7 +91,6 @@ body {
  CONTACT
 ---------------*/
 #header-right-sidebar {
-    text-align: right;
     line-height: 1.4;
 }
 .numbers {
@@ -125,6 +106,10 @@ body {
 /*--------------
  ICONS
  --------------*/
+a .fa {
+  margin: 0 6px 0 0;
+}
+
 .fa-twitter-square {
   color: #55acee;
 }
@@ -175,20 +160,17 @@ p {
 
   #secondary {
     .textwidget {
-      width: 80%;
+      width: 82%;
       margin: auto;
     }
   }
-}
 
-@media screen and (max-width: 600px) {
-  .tg-one-fourth {
-    &.tg-column-1 {
-      width: 30%;
+  .footer-widgets-wrapper {
+    .tg-one-fourth {
+      text-align: center;
     }
-    &.tg-column-4 {
-      width: 60%;
+    .tg-one-fourth-last {
+      padding-bottom: 0;
     }
   }
-
 }
