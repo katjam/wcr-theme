@@ -27,7 +27,7 @@ function enqueue_compiled_styles() {
 }
 
 // Add image size.
-add_image_size( 'wcr_banner', 1218, 580, array('center', 'center') );
+add_image_size( 'wcr_banner', 1268, 550, array('center', 'center') );
 
 // Allow svg upload for logo
 function cc_mime_types($mimes) {
