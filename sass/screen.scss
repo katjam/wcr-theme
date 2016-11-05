@@ -30,13 +30,6 @@ body {
     padding-bottom: 0 !important;
 }
 
-/*---------------
- FONT STYLES
-----------------*/
-h4 {
-  color: $wcr-lime;
-}
-
 /*--------------
  MAIN NAVIGATION
  ---------------*/
@@ -111,6 +104,31 @@ h4 {
     width: 20px;
   }
 }
+
+/*---------------
+ HEADINGS
+----------------*/
+h4 {
+  color: $wcr-lime;
+}
+
+/*---------------
+ LINKS
+----------------*/
+a {
+  color: $wcr-lime;
+  &:hover {
+    color: darken($wcr-lime, 10);
+  }
+}
+#secondary a.call-to-action-button {
+  background: $wcr-lime;
+  &:hover {
+    background: darken($wcr-lime, 10);
+    color: lighten($wcr-lime, 10);
+  }
+}
+
 
 /*--------------
  ICONS
