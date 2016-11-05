@@ -72,6 +72,7 @@ if ( ( spacious_options( 'spacious_show_header_logo_text', 'text_only' ) == 'log
 $description = get_bloginfo( 'description', 'display' );
 if ( $description || is_customize_preview() ) : ?>
                      <p id="site-description"><?php echo $description; ?></p>
+                    <h4>Approachable Practical Professional</h4>
                   <?php endif; ?><!-- #site-description -->
                         </div><!-- #header-text -->
                     </div><!-- #header-left-section -->
