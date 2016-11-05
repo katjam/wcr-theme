@@ -26,8 +26,16 @@ $wcr-lime: #75b72a;
  LAYOUT
  ---------------*/
 body {
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+#secondary aside.widget {
+  border-bottom: 1px solid #EAEAEA;
+  margin-bottom: 20px;
+  padding: 6px;
+  border-radius: 4px;
+  background: #FAFAFA;
 }
 
 /*--------------
@@ -125,7 +133,8 @@ a {
   background: $wcr-lime;
   &:hover {
     background: darken($wcr-lime, 10);
-    color: lighten($wcr-lime, 10);
+    color: #FAFAFA;
+    text-decoration: none;
   }
 }
 
