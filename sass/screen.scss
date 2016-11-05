@@ -164,6 +164,11 @@ img {
   }
 }
 
+.thumbnail img {
+  float: left;
+  padding-right: 12px;
+}
+
 /*--------------
  PARAGRAPHS
  -------------*/
@@ -201,3 +206,13 @@ p {
     }
   }
 }
+
+@media screen and (max-width: 600px) {
+  .entry-content {
+    text-align: center;
+  }
+  .thumbnail img {
+    float: none;
+  }
+}
+

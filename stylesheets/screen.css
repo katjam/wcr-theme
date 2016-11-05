@@ -172,10 +172,16 @@ img.left {
   padding-right: 12px;
 }
 
+/* line 167, ../sass/screen.scss */
+.thumbnail img {
+  float: left;
+  padding-right: 12px;
+}
+
 /*--------------
  PARAGRAPHS
  -------------*/
-/* line 170, ../sass/screen.scss */
+/* line 175, ../sass/screen.scss */
 p {
   text-align: justify;
 }
@@ -184,28 +190,39 @@ p {
  MEDIA QUERIES
 ---------------*/
 @media screen and (max-width: 768px) {
-  /* line 179, ../sass/screen.scss */
+  /* line 184, ../sass/screen.scss */
   #header-text-nav-container #site-description,
   #header-text-nav-container #header-right-sidebar {
     text-align: center;
   }
-  /* line 183, ../sass/screen.scss */
+  /* line 188, ../sass/screen.scss */
   #header-text-nav-container #site-description {
     font-size: 22px;
   }
 
-  /* line 189, ../sass/screen.scss */
+  /* line 194, ../sass/screen.scss */
   #secondary .textwidget {
     width: 82%;
     margin: auto;
   }
 
-  /* line 196, ../sass/screen.scss */
+  /* line 201, ../sass/screen.scss */
   .footer-widgets-wrapper .tg-one-fourth {
     text-align: center;
   }
-  /* line 199, ../sass/screen.scss */
+  /* line 204, ../sass/screen.scss */
   .footer-widgets-wrapper .tg-one-fourth-last {
     padding-bottom: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* line 211, ../sass/screen.scss */
+  .entry-content {
+    text-align: center;
+  }
+
+  /* line 214, ../sass/screen.scss */
+  .thumbnail img {
+    float: none;
   }
 }
