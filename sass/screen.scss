@@ -186,6 +186,20 @@ p {
 }
 
 /*--------------
+ WIDGETS
+ -------------*/
+.primary .widget_featured_single_post {
+  img {
+    float: left;
+    width: 400px;
+    padding-right: 20px;
+  }
+  a.call-to-action-button {
+    float: none;
+  }
+}
+
+/*--------------
  MEDIA QUERIES
 ---------------*/
 @media screen and (max-width: 768px) {
