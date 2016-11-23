@@ -45,7 +45,7 @@ function wcr_footer_copyright() {
 
 function wcr_allowedtags() {
     // Add custom tags to this string
-        return '<script>,<style>,<br>,<em>,<i>,<ul>,<ol>,<li>,<a>,<p>,<img>,<video>,<audio>';
+        return '<br>,<em>,<i>,<ul>,<ol>,<li>,<a>,<img>,<video>,<audio>';
     }
 
 if ( ! function_exists( 'wcr_custom_wp_trim_excerpt' ) ) :
