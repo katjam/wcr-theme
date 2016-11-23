@@ -30,12 +30,22 @@ body {
   padding-bottom: 0 !important;
 }
 
-#secondary aside.widget {
+#primary .widget_featured_single_post,
+#secondary aside.widget .post-excerpt {
   border-bottom: 1px solid #EAEAEA;
   margin-bottom: 20px;
   padding: 6px;
   border-radius: 4px;
   background: #FAFAFA;
+}
+
+#primary .widget_featured_single_post .post-excerpt-multiple {
+  h2 {
+    font-size: 0px;
+    margin-top: 10px;
+    border-top: 2px solid #EAEAEA;
+    line-height: 0px;
+  }
 }
 
 /*--------------
@@ -199,6 +209,10 @@ p {
 /*--------------
  WIDGETS
  -------------*/
+.widget_featured_single_post {
+  padding-bottom: 0px;
+}
+
 #primary .widget_featured_single_post {
   img {
     float: left;
@@ -206,7 +220,7 @@ p {
     padding-right: 20px;
   }
   a.call-to-action-button {
-    float: none;
+    float: left;
   }
 }
 
@@ -230,7 +244,6 @@ p {
       margin: auto;
     }
   }
-
   .footer-widgets-wrapper {
     .tg-one-fourth {
       text-align: center;
