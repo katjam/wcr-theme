@@ -149,6 +149,11 @@ a {
     color: darken($wcr-lime, 10);
   }
 }
+a[href$=".pdf"] {
+  background: url('pdf.png') no-repeat;
+  padding: 12px 0 12px 40px;
+  background-size: contain;
+}
 #primary a.call-to-action-button,
 #secondary a.call-to-action-button {
   background: $wcr-lime;
