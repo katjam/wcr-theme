@@ -38,7 +38,7 @@ do_action( 'spacious_after_post_content' );
 </article>
 <div>
   <?php if ($post->ID == 13): ?>
-    <?php the_widget( 'wcr_featured_widget', array('cat_id' => 3, 'title' => 'Current Sales', 'disable_feature_image' => false, 'image_position' => 'below') ); ?>
+    <?php the_widget( 'wcr_featured_widget', array('cat_id' => 3, 'title' => 'Forthcoming Sales', 'disable_feature_image' => false, 'image_position' => 'below') ); ?>
   <?php endif; ?>
   <?php if ($post->ID == 20): ?>
     <?php the_widget( 'wcr_featured_widget', array('cat_id' => 4, 'title' => 'Current Properties', 'disable_feature_image' => false, 'image_position' => 'below') ); ?>
