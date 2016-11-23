@@ -42,3 +42,58 @@ function wcr_footer_copyright() {
   $copyright_info = '<div class="copyright">'.$copyright_txt.$theme_info.'</div>';
   echo $copyright_info;
 }
+
+function wcr_allowedtags() {
+    // Add custom tags to this string
+        return '<script>,<style>,<br>,<em>,<i>,<ul>,<ol>,<li>,<a>,<p>,<img>,<video>,<audio>';
+    }
+
+if ( ! function_exists( 'wcr_custom_wp_trim_excerpt' ) ) :
+
+    function wcr_custom_wp_trim_excerpt($wcr_excerpt) {
+    $raw_excerpt = $wcr_excerpt;
+        if ( '' == $wcr_excerpt ) {
+
+            $wcr_excerpt = get_the_content('');
+            $wcr_excerpt = strip_shortcodes( $wcr_excerpt );
+            $wcr_excerpt = apply_filters('the_content', $wcr_excerpt);
+            $wcr_excerpt = str_replace(']]>', ']]&gt;', $wcr_excerpt);
+            $wcr_excerpt = strip_tags($wcr_excerpt, wcr_allowedtags()); /*IF you need to allow just certain tags. Delete if all tags are allowed */
+
+            //Set the excerpt word count and only break after sentence is complete.
+                $excerpt_word_count = 75;
+                $excerpt_length = apply_filters('excerpt_length', $excerpt_word_count);
+                $tokens = array();
+                $excerptOutput = '';
+                $count = 0;
+
+                // Divide the string into tokens; HTML tags, or words, followed by any whitespace
+                preg_match_all('/(<[^>]+>|[^<>\s]+)\s*/u', $wcr_excerpt, $tokens);
+
+                foreach ($tokens[0] as $token) {
+
+                    if ($count >= $excerpt_length && preg_match('/[\,\;\?\.\!]\s*$/uS', $token)) {
+                    // Limit reached, continue until , ; ? . or ! occur at the end
+                        $excerptOutput .= trim($token);
+                        break;
+                    }
+
+                    // Add words to complete sentence
+                    $count++;
+
+                    // Append what's left of the token
+                    $excerptOutput .= $token;
+                }
+
+            $wcr_excerpt = trim(force_balance_tags($excerptOutput));
+
+            return $wcr_excerpt;
+
+        }
+        return apply_filters('wcr_custom_wp_trim_excerpt', $wcr_excerpt, $raw_excerpt);
+    }
+
+endif;
+
+remove_filter('get_the_excerpt', 'wp_trim_excerpt');
+add_filter('get_the_excerpt', 'wcr_custom_wp_trim_excerpt');
