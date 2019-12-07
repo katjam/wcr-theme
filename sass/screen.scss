@@ -198,6 +198,15 @@ img {
   }
 }
 
+article.post-11 figure {
+    float: left;
+    max-width: 225px;
+  &.wp-caption {
+    border: none;
+    margin-bottom: 0;
+  }
+}
+
 .thumbnail img {
   float: left;
   padding-right: 12px;
