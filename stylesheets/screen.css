@@ -216,15 +216,17 @@ img.left {
 /* line 201, ../sass/screen.scss */
 article.post-11 figure {
   float: left;
+  height: 265px;
   max-width: 225px;
+  padding: 8px;
 }
-/* line 204, ../sass/screen.scss */
+/* line 206, ../sass/screen.scss */
 article.post-11 figure.wp-caption {
   border: none;
   margin-bottom: 0;
 }
 
-/* line 210, ../sass/screen.scss */
+/* line 212, ../sass/screen.scss */
 .thumbnail img {
   float: left;
   padding-right: 12px;
@@ -233,7 +235,7 @@ article.post-11 figure.wp-caption {
 /*--------------
  PARAGRAPHS
  -------------*/
-/* line 218, ../sass/screen.scss */
+/* line 220, ../sass/screen.scss */
 p {
   text-align: justify;
 }
@@ -241,18 +243,18 @@ p {
 /*--------------
  WIDGETS
  -------------*/
-/* line 225, ../sass/screen.scss */
+/* line 227, ../sass/screen.scss */
 .widget_featured_single_post {
   padding-bottom: 0px;
 }
 
-/* line 230, ../sass/screen.scss */
+/* line 232, ../sass/screen.scss */
 #primary .widget_featured_single_post img {
   float: left;
   width: 400px;
   padding-right: 20px;
 }
-/* line 235, ../sass/screen.scss */
+/* line 237, ../sass/screen.scss */
 #primary .widget_featured_single_post a.call-to-action-button {
   float: left;
 }
@@ -261,39 +263,47 @@ p {
  MEDIA QUERIES
 ---------------*/
 @media screen and (max-width: 768px) {
-  /* line 245, ../sass/screen.scss */
+  /* line 247, ../sass/screen.scss */
   #header-text-nav-container #site-description,
   #header-text-nav-container #header-right-sidebar {
     text-align: center;
   }
-  /* line 249, ../sass/screen.scss */
+  /* line 251, ../sass/screen.scss */
   #header-text-nav-container #site-description {
     font-size: 22px;
   }
 
-  /* line 255, ../sass/screen.scss */
+  /* line 257, ../sass/screen.scss */
   #secondary .textwidget {
     width: 82%;
     margin: auto;
   }
 
-  /* line 261, ../sass/screen.scss */
+  /* line 263, ../sass/screen.scss */
   .footer-widgets-wrapper .tg-one-fourth {
     text-align: center;
   }
-  /* line 264, ../sass/screen.scss */
+  /* line 266, ../sass/screen.scss */
   .footer-widgets-wrapper .tg-one-fourth-last {
     padding-bottom: 0;
   }
 }
 @media screen and (max-width: 600px) {
-  /* line 271, ../sass/screen.scss */
+  /* line 273, ../sass/screen.scss */
   .entry-content {
     text-align: center;
   }
 
-  /* line 274, ../sass/screen.scss */
+  /* line 276, ../sass/screen.scss */
   .thumbnail img {
     float: none;
+  }
+}
+@media screen and (max-width: 320px) {
+  /* line 282, ../sass/screen.scss */
+  article.post-11 figure {
+    float: none;
+    width: 100%;
+    max-width: 280px;
   }
 }

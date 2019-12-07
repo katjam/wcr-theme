@@ -200,7 +200,9 @@ img {
 
 article.post-11 figure {
     float: left;
+    height: 265px;
     max-width: 225px;
+    padding: 8px;
   &.wp-caption {
     border: none;
     margin-bottom: 0;
@@ -273,6 +275,14 @@ p {
   }
   .thumbnail img {
     float: none;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  article.post-11 figure {
+    float: none;
+    width: 100%;
+    max-width: 280px;
   }
 }
 
