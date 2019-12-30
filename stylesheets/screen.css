@@ -303,7 +303,15 @@ p {
   /* line 282, ../sass/screen.scss */
   article.post-11 figure {
     float: none;
+    height: auto;
     width: 100%;
+    margin: auto;
     max-width: 280px;
+  }
+
+  /* line 289, ../sass/screen.scss */
+  img.left {
+    float: none;
+    padding: 0;
   }
 }
