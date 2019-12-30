@@ -281,8 +281,14 @@ p {
 @media screen and (max-width: 320px) {
   article.post-11 figure {
     float: none;
+    height: auto;
     width: 100%;
+    margin: auto;
     max-width: 280px;
+  }
+  img.left {
+    float: none;
+    padding: 0;
   }
 }
 
