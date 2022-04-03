@@ -198,6 +198,7 @@ img {
   }
 }
 
+.page-template-contact article figure,
 article.post-11 figure {
     float: left;
     height: 265px;
@@ -279,6 +280,7 @@ p {
 }
 
 @media screen and (max-width: 320px) {
+  .page-template-contact article figure,
   article.post-11 figure {
     float: none;
     height: auto;
