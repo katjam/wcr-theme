@@ -56,10 +56,12 @@ wp_head();
                 <div id="header-text-nav-wrap" class="clearfix">
                     <div id="header-left-section">
 <?php
-if( ( spacious_options( 'spacious_show_header_logo_text', 'text_only' ) == 'both' || spacious_options( 'spacious_show_header_logo_text', 'text_only' ) == 'logo_only' ) && spacious_options( 'spacious_header_logo_image', '' ) != '' ) {
+if ( ( 'both' === get_theme_mod( 'spacious_show_header_logo_text', 'text_only' ) || 'logo_only' === get_theme_mod( 'spacious_show_header_logo_text', 'text_only' ) ) ) {
 ?>
                             <div id="header-logo-image">
-                                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php echo spacious_options( 'spacious_header_logo_image', '' ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"></a>
+                                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+  <img src="http://www.westcountryrural.co.uk/wp-content/uploads/2022/04/WCR_Logo_Purple.png" alt="West Country Rural logo" />
+</a>
                             </div><!-- #header-logo-image -->
 <?php
 }

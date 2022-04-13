@@ -73,6 +73,9 @@ body {
 #header-text-nav-container {
   #header-left-section {
     margin-right: 10px;
+    @media (min-width: 946px) {
+      border-bottom: solid 20px $wcr-silver;
+    }
   }
   #site-title a {
     font-size: 52px;
@@ -80,9 +83,15 @@ body {
   #site-description {
     font-size: 28px;
   }
+  h4 {
+    padding-bottom: 0;
+  }
   #header-logo-image {
     img {
       height: 170px;
+    }
+    @media (min-width: 946px) {
+      margin-bottom: -40px;
     }
   }
 }
