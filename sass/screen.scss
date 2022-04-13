@@ -9,8 +9,8 @@
 /*--------------
  COLOURS
  --------------*/
-$wcr-navy: #282f6b;
-$wcr-lime: #75b72a;
+$wcr-purple: #440099;
+$wcr-silver: #A7A8AA;
 
 /*--------------
  MIXINS
@@ -59,11 +59,11 @@ body {
   }
   .menu-toggle,
   &.main-small-navigation li {
-    background: $wcr-navy;
+    background: $wcr-purple;
   }
   .menu-toggle:hover,
   &.main-small-navigation li:hover {
-    background: $wcr-lime;
+    background: $wcr-silver;
   }
 }
 
@@ -91,10 +91,11 @@ body {
  FOOTER
 ---------------*/
 .footer-widgets-wrapper {
-  background-color: $wcr-navy;
+  background-color: $wcr-purple;
 
-  .footer-widgets-area a {
-    color: $wcr-lime !important;
+  .footer-widgets-area a,
+   footer-widgets-area a:hover {
+    color: $wcr-silver !important;
   }
 
   .tg-one-fourth {
@@ -136,17 +137,17 @@ body {
  HEADINGS
 ----------------*/
 h4 {
-  color: $wcr-lime;
+  color: $wcr-purple;
 }
 
 /*---------------
  LINKS
 ----------------*/
 a {
-  color: $wcr-lime;
+  color: $wcr-silver;
   font-weight: 700;
   &:hover {
-    color: darken($wcr-lime, 10);
+    color: darken($wcr-silver, 10);
   }
 }
 a[href$=".pdf"] {
@@ -155,9 +156,9 @@ a[href$=".pdf"] {
 }
 #primary a.call-to-action-button,
 #secondary a.call-to-action-button {
-  background: $wcr-lime;
+  background: $wcr-purple;
   &:hover {
-    background: darken($wcr-lime, 10);
+    background: darken($wcr-purple, 10);
     color: #FAFAFA;
     text-decoration: none;
   }
